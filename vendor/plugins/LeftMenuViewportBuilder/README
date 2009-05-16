@@ -1,0 +1,50 @@
+Be sure to run the install rake task
+
+
+All plugins must have a README
+
+**!!!!look
+
+We can make install scripts for these libs - developer just creates a directory called install, then an exact mapping of the app structure under it, then all files will be copied into the real direcories:
+
+e.g.
+
+/myLib
+  /install
+    /public
+      /images <- A bunch of images
+      /stylesheets <- And some stylesheets
+    /and
+    /anything
+      /else
+      
+All gets copied.  We can also uninstall this way!
+
+
+In HTML document, put each block of scripts into its own div, like:
+
+<div id="ext-mvc-core">
+<div id="ext-mvc-config">
+<div id="ext-mvc-plugins">
+<div id="ext-mvc-application">
+
+Then plugins can automatically be installed into the HTML as well, inside the appropriate div (and then easily uninstalled).  Might look like this:
+
+<div id="ext-mvc-plugin-LeftMenuViewportBuilder">
+  <script type="text/javascript" src="../vendor/plugins/LeftMenuViewportBuilder/LeftMenuViewportBuilder.js"></script>
+  ... any other files found in that dir or subdir
+</div>
+
+
+Upgrades?  If the plugin has a .git/config file, and references github, use hpricot to look at current file on Github, parse version, if version is higher than the current:
+
+1. Grab all files off github.  Once files are downloaded in a temp directory,
+2. Run uninstall for old version
+3. Move old version an an archive directory
+4. Move new version to libs directory
+5. Run new version installer
+
+Could also have extmvc:plugins:update_all, which iterates over all plugins with .git directories, running upgrade for each
+
+
+if js can read the css, define a special CSS class (like .define_some-directory-file) which records that /dome/directory/file.css has been loaded successfully.  This way we can check for missing assets.  Can we also do this for js or css by iterating over all of the link and script nodes on a page?

@@ -1,0 +1,6 @@
+# Lists the install order
+# Any line beginning with a # is a comment
+# Any line with an = is treated as variable declaration
+
+# Allows specification of only the important files to have in order, automatically adding all others
+OnlyInstallThese=false

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <meta content='text/html; charset=ISO-8859-1' http-equiv='Content-Type' />
+    <link href='public/stylesheets/ext-all.css' rel='stylesheet' type='text/css' />
+    <link href='vendor/plugins/LeftMenuViewportBuilder/public/stylesheets/left-menu-viewport-layout.css' rel='stylesheet' type='text/css' />
+    <title>ExtJS MVC Application</title>
+  </head>
+  <body>
+    <!-- Core Ext and Ext MVC libraries -->
+    <div id="ext-mvc-core">
+      <script type="text/javascript" src="vendor/ext/adapter/ext/ext-base.js" class="concat-ignore"></script>
+      <script type="text/javascript" src="vendor/ext/ext-all-debug.js" class="concat-ignore"></script>
+      <script type="text/javascript" src="vendor/mvc/ext-mvc-all.js"></script>
+    </div>
+    
+    <!-- Configuration files -->
+    <div id="ext-mvc-config">
+      <script type="text/javascript" src="config/initialize.js"></script>
+      <script type="text/javascript" src="config/database.js"></script>
+      <script type="text/javascript" src="config/routes.js"></script>
+    </div>
+    
+    <!-- Include any third party libraries/plugin files here -->
+    <div id="ext-mvc-plugins">
+      
+      <!-- Installed from vendor/plugins/LeftMenuViewportBuilder -->
+      <div id="ext-mvc-plugins-LeftMenuViewportBuilder">
+        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/LeftMenuViewportBuilder.js"></script>
+        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/MenuLink.js"></script>
+        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/MenuHeader.js"></script>
+      </div>
+      
+    </div>
+    
+    <!-- Include your application files here -->
+    <div id="ext-mvc-application">
+      <script type="text/javascript" src="app/OS.js"></script>
+      
+      <div id="ext-mvc-application-models">
+        
+      </div>
+      
+      <div id="ext-mvc-application-controllers">
+        <script type="text/javascript" src="app/controllers/IndexController.js"></script>
+      </div>
+      
+      <div id="ext-mvc-application-views">
+        <script type="text/javascript" src="app/views/index/Index.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

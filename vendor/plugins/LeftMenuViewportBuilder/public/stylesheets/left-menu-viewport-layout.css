@@ -1,0 +1,21 @@
+.x-menu-link a {
+  text-decoration: none;
+  display: block;
+  padding: 3px 25px 12px 28px;
+  color: #426198;
+  outline: none;
+
+  background-position: 3px 2px;
+  background-repeat: no-repeat;
+}
+
+.x-menu-link a:hover {
+  text-decoration: underline;
+}
+
+.x-menu-header {
+  color: #426198;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 5px 0px 10px 3px;
+}
