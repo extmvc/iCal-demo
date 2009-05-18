@@ -104,7 +104,7 @@ Ext.extend(ExtMVC.plugin.LeftMenuViewportBuilder, ExtMVC.ViewportBuilder, {
         margins:    '0 8 8 0',
         layout:     'fit',
         bodyBorder: false,
-        bodyStyle:  'padding-top: 8px; background-color: #c5d1e7;',
+        bodyStyle:  'padding-top: 8px; background-color: transparent;',
         listeners:  {
           'beforeadd': {
             //removes the current component so newly added component shows up automatically

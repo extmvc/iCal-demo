@@ -1,17 +1,17 @@
 /**
- * @class MyApp.controllers.IndexController
+ * @class iCal.controllers.IndexController
  * @extends ExtMVC.Controller
  * Default root controller
  */
-MyApp.controllers.IndexController = Ext.extend(ExtMVC.Controller, {
+iCal.controllers.IndexController = Ext.extend(ExtMVC.Controller, {
   constructor: function() {
     //super
-    MyApp.controllers.IndexController.superclass.constructor.call(this, {
-      viewsPackage: MyApp.views.index
+    iCal.controllers.IndexController.superclass.constructor.call(this, {
+      viewsPackage: iCal.views.index
     });
   }
 });
 
-ExtMVC.OS.getOS().registerController('index', MyApp.controllers.IndexController);
+ExtMVC.OS.getOS().registerController('index', iCal.controllers.IndexController);
 
-Ext.ns('MyApp.views.index');
+Ext.ns('iCal.views.index');

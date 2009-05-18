@@ -1,0 +1,31 @@
+.ical {
+  font-family: helvetica;
+}
+
+.ical-events-panel .x-panel-header {
+  border-bottom: none;
+  text-align: center;
+  font-size: 1.1em;
+  color: #333;
+  font-weight: bold;
+}
+
+.ical-event-cell {
+  border: 1px solid #c4c4c4;
+  border-bottom: none;
+  border-left: none;
+  vertical-align: top;
+}
+
+.ical-event-cell-today {
+  background-color: #E7ECF6;
+}
+
+.ical-event-cell-selected {
+  background-color: #F1F1F1;
+}
+
+.ical-event-cell span {
+  float: right;
+  padding: 2px 2px 0 0;
+}

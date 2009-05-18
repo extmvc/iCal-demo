@@ -4,8 +4,8 @@
 <html>
   <head>
     <meta content='text/html; charset=ISO-8859-1' http-equiv='Content-Type' />
-    <link href='public/stylesheets/ext-all.css' rel='stylesheet' type='text/css' />
-    <link href='vendor/plugins/LeftMenuViewportBuilder/public/stylesheets/left-menu-viewport-layout.css' rel='stylesheet' type='text/css' />
+    <link href='public/stylesheets/ext-all-notheme.css' rel='stylesheet' type='text/css' />
+    <link href='public/stylesheets/ical.css' rel='stylesheet' type='text/css' />
     <title>ExtJS MVC Application</title>
   </head>
   <body>
@@ -26,13 +26,6 @@
     <!-- Include any third party libraries/plugin files here -->
     <div id="ext-mvc-plugins">
       
-      <!-- Installed from vendor/plugins/LeftMenuViewportBuilder -->
-      <div id="ext-mvc-plugins-LeftMenuViewportBuilder">
-        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/LeftMenuViewportBuilder.js"></script>
-        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/MenuLink.js"></script>
-        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/MenuHeader.js"></script>
-      </div>
-      
     </div>
     
     <!-- Include your application files here -->
@@ -40,7 +33,8 @@
       <script type="text/javascript" src="app/OS.js"></script>
       
       <div id="ext-mvc-application-models">
-        
+        <script type="text/javascript" src="app/models/Calendar.js"></script>
+        <script type="text/javascript" src="app/models/Event.js"></script>
       </div>
       
       <div id="ext-mvc-application-controllers">
@@ -48,7 +42,10 @@
       </div>
       
       <div id="ext-mvc-application-views">
-        <script type="text/javascript" src="app/views/index/Index.js"></script>
+        <script type="text/javascript" src="app/views/index/EventsPanel.js"></script>
+        <script type="text/javascript" src="app/views/index/EventCell.js"></script>
+        <script type="text/javascript" src="app/views/index/CalendarsPanel.js"></script>
+        <script type="text/javascript" src="app/views/index/MenuPanel.js"></script>
       </div>
     </div>
   </body>
